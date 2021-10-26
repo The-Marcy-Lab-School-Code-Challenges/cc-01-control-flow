@@ -10,27 +10,44 @@
 
 ## Code Problems
 
-1. Write a function named `countToTwenty`, that console.logs all integers from 1 to 20, inclusive. 
+1. Create a function `betweenFiveAndTen` that takes in an integer, and if that integer is between 5 and 10, it will return true or false.
 ```
-countToTwenty() //console.logs 1, 2, 3, 4...18, 19, 20
-```
-
-2. Write a function named `countFromTwenty`, that console.logs all integers from 20 to 1, inclusive. 
-```
-countFromTwenty() //console.logs 20, 19, 18...4, 3, 2, 1
+betweenFiveAndTen(5) //returns true
+betweenFiveAndTen(15) //returns false 
 ```
 
-3. Write a function named `countToN`, that takes in an integer argument, and console.logs all integers from 1 up to the given integer, inclusive.
+2. Create a function `betweenTenAndThirty` that takes in an integer, and if that integer is between 10 and 30 it will return true or false.
 ```
-countToN(10) // console.logs 1 2 3 4 5 6 7 8 9 10
-```
-
-4. Write a function named `countFromN`, that takes in an integer argument, and console.logs all integers from the given integer to 1, inclusive.
-```
-countFromN(10) //console.logs 10 9 8 7 6 5 4 3 2 1 
+betweenTenAndThirty(10) //returns false
+betweenTenAndThirty(15) //returns true
 ```
 
-5. Write a function named `countEveryOdd`, that takes in an integer argument, and console.logs all the odd integers from 1 up to the given integer, inclusive.
+3. Create a function `betweenThirtyAndFifty` that takes in an integer, and if that integer is between 30 and 50 it will return true or false.
 ```
-countEveryOdd(10) // console.logs 1 3 5 7 9 
+betweenThirtyAndFifty(30) //returns true
+betweenThirtyAndFifty(55) //returns false
+```
+
+4. Create a function `betweenThirtyFiftySeventy` that takes in an integer, and if that integer is between 0 and 30 or between 50 and 70 it will return true or false.
+```
+betweenThirtyFiftySeventy(0) //returns true
+betweenThirtyFiftySeventy(44) //returns false
+betweenThirtyFiftySeventy(55) //returns true
+betweenThirtyFiftySeventy(71) //returns false
+```
+
+5. Create a function `betweenTwentyFiftySixty` that takes in an integer, and if that integer is between 0 and 20 or between 50 and 60 it will return true or false.
+```
+betweenTwentyFiftySixty(12) //returns true
+betweenTwentyFiftySixty(44) //returns false
+betweenTwentyFiftySixty(55) //returns true
+betweenTwentyFiftySixty(61) //returns false
+```
+
+6. Create a function `betweenTenTwentyThirty` that takes in an  integer, and if that integer is between 0 and 10 or between 20 and 30 it will return true or false
+```
+betweenTenTwentyThirty(0) //returns true
+betweenTenTwentyThirty(9) //returns true
+betweenTenTwentyThirty(22) //returns true
+betweenTenTwentyThirty(31) //returns false
 ```
