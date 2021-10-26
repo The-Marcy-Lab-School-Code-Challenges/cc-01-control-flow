@@ -1,25 +1,30 @@
 //1
-function countToTwenty(){
+function betweenFiveAndTen(){
   
 }
 
 //2
-function countFromTwenty(){
+function betweenTenAndThirty(){
   
 }
 
 //3
-function countToN(){
+function betweenThirtyAndFifty(){
   
 }
 
 
 //4
-function countFromN(){
+function betweenThirtyFiftySeventy(){
   
 }
 
 //5
-function countEveryOdd(){
+function betweenTwentyFiftySixty(){
+  
+}
+
+//6
+function betweenTenTwentyThirty(){
   
 }
