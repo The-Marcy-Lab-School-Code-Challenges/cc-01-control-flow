@@ -38,7 +38,7 @@ betweenThirtyFiftySeventy(71) //returns false
 
 5. Create a function `betweenTwentyFiftySixty` that takes in an integer, and if that integer is between 0 and 20 or between 50 and 60 it will return true or false.
 ```
-betweenTwentyFiftySixty(12) //returns true
+betweenTwentyFiftySixty(20) //returns true
 betweenTwentyFiftySixty(44) //returns false
 betweenTwentyFiftySixty(55) //returns true
 betweenTwentyFiftySixty(61) //returns false
