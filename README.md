@@ -1,53 +1,54 @@
-# Code Challenge: Control Flow
+# **Code Challenge: Control Flow**
 
-## Instructions
+## **Instructions**
 
-1. Clone down this assignment to your `code-challenges' directory in your environment.  
-2. Code your solution using JavaScript in `index.js`. 
-3. **Be sure to run and test your code throughly and convert all functions to arrow synta!**
-4. By the end of Code Challenge, **commit and push your changes up to Github**.
+1. Clone down this assignment to your `code-challenges' directory in your environment.
+2. Code your solutions using JavaScript in `index.js`.
+3. **Be sure to run and test your code thoroughly and write all functions using arrow syntax!**
+4. By the end of Code Challenge, **commit and push your changes up to Github**.
 5. Using the browser, verify that your solution is in your remote repo on Github.
 
-## Code Problems
+## **Code Problems**
 
-1. Create a function `betweenFiveAndTen` that takes in an integer, and if that integer is between 5 and 10, it will return true or false.
-```
-betweenFiveAndTen(5) //returns true
-betweenFiveAndTen(15) //returns false 
-```
+### **Code your solutions to these problems in the `index.js` file**
 
-2. Create a function `betweenTenAndThirty` that takes in an integer, and if that integer is between 10 and 30 it will return true or false.
-```
-betweenTenAndThirty(10) //returns false
-betweenTenAndThirty(15) //returns true
-```
-
-3. Create a function `betweenThirtyAndFifty` that takes in an integer, and if that integer is between 30 and 50 it will return true or false.
-```
-betweenThirtyAndFifty(30) //returns true
-betweenThirtyAndFifty(55) //returns false
-```
-
-4. Create a function `betweenThirtyFiftySeventy` that takes in an integer, and if that integer is between 0 and 30 or between 50 and 70 it will return true or false.
-```
-betweenThirtyFiftySeventy(0) //returns true
-betweenThirtyFiftySeventy(44) //returns false
-betweenThirtyFiftySeventy(55) //returns true
-betweenThirtyFiftySeventy(71) //returns false
-```
-
-5. Create a function `betweenTwentyFiftySixty` that takes in an integer, and if that integer is between 0 and 20 or between 50 and 60 it will return true or false.
-```
-betweenTwentyFiftySixty(20) //returns true
-betweenTwentyFiftySixty(44) //returns false
-betweenTwentyFiftySixty(55) //returns true
-betweenTwentyFiftySixty(61) //returns false
-```
-
-6. Create a function `betweenTenTwentyThirty` that takes in an  integer, and if that integer is between 0 and 10 or between 20 and 30 it will return true or false
-```
-betweenTenTwentyThirty(0) //returns true
-betweenTenTwentyThirty(9) //returns true
-betweenTenTwentyThirty(22) //returns true
-betweenTenTwentyThirty(31) //returns false
-```
+1. Write a function named `greatestOfTwo` that takes in two integer arguments and returns the **largest** of both arguments. You can assume both integers will be different values.
+    
+    ```
+    greatestOfTwo(1, 14) // returns 14
+    greatestOfTwo(-2, 2) // returns 2
+    
+    ```
+    
+2. Write a function named `areBothSame`, that takes in two arguments and returns true if both arguments are truthy in value, and returns false if not.
+    
+    ```
+    areBothSame(true, 1) // returns true
+    areBothSame("2", 2) // returns true
+    areBothSame("5", 2) // returns false
+    
+    ```
+    
+3. Write a function named `areBothEqual`, that takes in two arguments and returns true if both arguments are the same in data type and value, and returns false if they are not.
+    
+    ```
+    areBothEqual("2", "2") // returns true
+    areBothEqual("2", 2) // returns false
+    areBothEqual(true, 1) // returns false
+    areBothEqual(7, 7) // returns true
+    ```
+    
+    ### Bonus:
+    
+    Refactor all of the functions so that it returns an error message if only one or zero arguments are passed to the function. 
+    
+    ```jsx
+    greatestOfTwo(1) // returns "Only one argument was passed"
+    greatestOfTwo() // returns "No arguments were passed" 
+    
+    areBothSame(true, 1) // returns "Only one argument was passed"
+    areBothSame("2", 2)  // returns "No arguments were passed" 
+    
+    areBothEqual("2", "2") // returns "Only one argument was passed"
+    areBothEqual("2", 2) // returns "No arguments were passed" 
+    ```
