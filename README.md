@@ -46,9 +46,9 @@
     greatestOfTwo(1) // returns "Only one argument was passed"
     greatestOfTwo() // returns "No arguments were passed" 
     
-    areBothSame(true, 1) // returns "Only one argument was passed"
-    areBothSame("2", 2)  // returns "No arguments were passed" 
+    areBothSame(true) // returns "Only one argument was passed"
+    areBothSame()  // returns "No arguments were passed" 
     
-    areBothEqual("2", "2") // returns "Only one argument was passed"
-    areBothEqual("2", 2) // returns "No arguments were passed" 
+    areBothEqual("2") // returns "Only one argument was passed"
+    areBothEqual() // returns "No arguments were passed" 
     ```
