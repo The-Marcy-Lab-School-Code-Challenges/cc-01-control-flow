@@ -1,54 +1,103 @@
 # **Code Challenge: Control Flow**
 
-## **Instructions**
+**Instructions**
 
-1. Clone down this assignment to your `code-challenges' directory in your environment.
+1. Clone down this assignment to your `tip-challenges` directory in your environment.
 2. Code your solutions using JavaScript in `index.js`.
-3. **Be sure to run and test your code thoroughly and write all functions using arrow syntax!**
-4. By the end of Code Challenge, **commit and push your changes up to Github**.
-5. Using the browser, verify that your solution is in your remote repo on Github.
+3. **Be sure to run and test your code thoroughly.**
+4. By the end of class, **commit and push your changes up to Github**.
+5. Using the browser, verify that your solution is in your remote repo on GitHub.
 
-## **Code Problems**
+---
 
-### **Code your solutions to these problems in the `index.js` file**
+### example.js
 
-1. Write a function named `greatestOfTwo` that takes in two integer arguments and returns the **largest** of both arguments. You can assume both integers will be different values.
-    
-    ```
-    greatestOfTwo(1, 14) // returns 14
-    greatestOfTwo(-2, 2) // returns 2
-    
-    ```
-    
-2. Write a function named `areBothSame`, that takes in two arguments and returns true if both arguments are truthy in value, and returns false if not.
-    
-    ```
-    areBothSame(true, 1) // returns true
-    areBothSame("2", 2) // returns true
-    areBothSame("5", 2) // returns false
-    
-    ```
-    
-3. Write a function named `areBothEqual`, that takes in two arguments and returns true if both arguments are the same in data type and value, and returns false if they are not.
-    
-    ```
-    areBothEqual("2", "2") // returns true
-    areBothEqual("2", 2) // returns false
-    areBothEqual(true, 1) // returns false
-    areBothEqual(7, 7) // returns true
-    ```
-    
-    ### Bonus:
-    
-    Refactor all of the functions so that it returns an error message if only one or zero arguments are passed to the function. 
-    
-    ```jsx
-    greatestOfTwo(1) // returns "Only one argument was passed"
-    greatestOfTwo() // returns "No arguments were passed" 
-    
-    areBothSame(true) // returns "Only one argument was passed"
-    areBothSame()  // returns "No arguments were passed" 
-    
-    areBothEqual("2") // returns "Only one argument was passed"
-    areBothEqual() // returns "No arguments were passed" 
-    ```
+In this file, there are two functions. To test the functions, you can run `node example.js` within this repo. 
+
+### 🧠 `checkValue`
+
+- Tests different values (like strings, numbers, `null`, etc.)
+- Shows how JavaScript decides if a value is **truthy** or **falsy**
+- Helps us see what will make a conditional statement run
+
+### 📝 `assignGrade`
+
+- Takes in a test score (0–100)
+- Uses `if / else if / else` to choose which letter grade to return
+- Shows how to write pass data through control flow with conditionals
+
+```jsx
+
+// This function takes in a value and shows how JS evaluates it
+const checkValue = (value) => {
+
+  // JavaScript will convert the value to a boolean inside this if statement, depending on whether this value is truthy or falsy
+  if (value) {
+    console.log("This value is truthy ✅");
+  } else {
+    console.log("This value is falsy ❌");
+  }
+
+  console.log("--------------------------");
+};
+
+// 🧪 Test with different data types
+//checkValue("Hello");     // String (truthy)
+//checkValue("");           // Empty string (falsy)
+//checkValue(42);            // Number (truthy)
+//checkValue(0);             // Number zero (falsy)
+//checkValue(true);          // Boolean (truthy)
+//checkValue(false);         // Boolean (falsy)
+//checkValue(undefined);     // Undefined (falsy)
+//checkValue(null);          // Null (falsy)
+//checkValue(NaN);            // Not-a-Number (falsy)
+
+// This function takes a numeric test score (0–100) 
+// and returns the corresponding letter grade (A–F)
+const assignGrade = (score) => {
+  if (score >= 90) {
+    return "A";
+  } else if (score >= 80) {
+    return "B";
+  } else if (score >= 70) {
+    return "C";
+  } else if (score >= 60) {
+    return "D";
+  } else {
+    return "F";
+  }
+};
+
+// 🧪 Test the function
+//console.log(assignGrade(95)); // "A"
+//console.log(assignGrade(74)); // "C"
+//console.log(assignGrade(40)); // "F"
+
+```
+
+---
+
+## index.js
+
+Write a function called `outfitPicker` that:
+
+- Takes in a temperature (`temp`), which is a number type
+- Uses **if / else if / else** statements
+- Returns an **outfit suggestion** (as a string) based on the temperature
+
+```jsx
+
+/*
+Complete the function so that it returns the following:
+80 or above → "Wear shorts and a t-shirt."
+60–79 → "Wear jeans and a light jacket."
+40–59 → "Wear a sweater and pants."
+Below 40 → "Wear a heavy coat, scarf, and boots."
+*/
+
+const outfitPicker = (temp) => {
+  // ✍️ Write your code here
+};
+
+//Test your function below
+```
